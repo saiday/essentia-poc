@@ -104,7 +104,7 @@ const predictions = await musicnn.predict(features, true);
 
 ## 還剩下的差異（可接受、預期內）
 
-兩端分數還是有非常微小的差(max |diff| ≈ 0.0015)，這是**預期且無法消除**的，不是 bug：
+兩端分數還是有非常微小的差(`max |diff| ≈ 0.0015`)，這是**預期且無法消除**的，不是 bug：
 
 - **mel-spectrogram 計算**：Python 用 essentia 的 C++ 實作，JS 用 essentia.js 編出來的 WASM。同樣演算法、不同 toolchain，浮點數會有微小差。
 - **inference backend**：Python 走 libtensorflow(C++)，JS 刻意走純 JS 的 tfjs CPU backend（啟動時硬性 assert backend 是 `cpu`）。我們**故意不裝** `@tensorflow/tfjs-node`，避免 native backend 偷偷接管 —— 那會讓數值「太接近」而失去比對的意義（我們要模擬真實瀏覽器環境）。
