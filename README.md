@@ -2,6 +2,8 @@
 
 對同一份音檔分別用 Python (`essentia.standard.TensorflowPredictMusiCNN`) 與 JavaScript (`essentia.js` + tfjs CPU backend) 跑 MSD-MusiCNN auto-tagging,比對兩邊 50 維 sigmoid 輸出是否一致。
 
+> 完整的實作對齊說明、修改前後對照與結論,見[交接文件](index.md)。
+
 ## How to run
 
 1. 一次性設定 (建 venv、安裝 deps、下載模型):
