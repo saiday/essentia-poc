@@ -1,4 +1,8 @@
-# MSD-MusiCNN Python / JS 一致性 PoC — 交接文件
+---
+layout: default
+title: MSD-MusiCNN Python / JS 一致性 PoC — 交接文件
+description: Python 與 JS 兩端推論一致性驗證 PoC 的交接說明
+---
 
 ## 這個 PoC 在做什麼
 
