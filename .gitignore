@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Downloaded by setup.sh
+models/
+
+# Test input / generated artifacts
+input.mp3
+input_16k_mono.wav
+results/
+
+# macOS
+.DS_Store
